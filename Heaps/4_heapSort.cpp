@@ -20,10 +20,9 @@ void heapify(vector<int> &arr, int n, int i){
 void heapSort(vector<int> &arr, int n){
     int size = n-1;
 
-    while(size > 1){
-        swap(arr[size], arr[0]);
-        size--;
-        heapify(arr, size, 0);
+    for (int i = size; i >= 0; i--) {
+        swap(arr[0], arr[i]);
+        heapify(arr, i, 0);
     }
 }
 
