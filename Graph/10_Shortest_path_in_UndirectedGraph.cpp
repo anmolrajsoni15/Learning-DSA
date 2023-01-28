@@ -62,12 +62,12 @@ int main(){
         edges.push_back({x, y});
     }
 
-    int s, e;
+    int st, end;
     cout<<"Choose your starting and ending point:- ";
-    cin>>s>>e;
+    cin>>st>>end;
 
-    vector<int> ans = shortestPath(edges, n, s, e);
-    cout<<"The sortest path between "<<s<<"and "<<e<<" is:-\n";
+    vector<int> ans = shortestPath(edges, n, st, end);
+    cout<<"The sortest path between "<<st<<"and "<<end<<" is:-\n";
     for(auto it: ans)
         cout<<it<<' ';
     cout<<endl;
