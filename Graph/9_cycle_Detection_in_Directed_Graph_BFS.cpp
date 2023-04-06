@@ -10,7 +10,6 @@ bool cyclePresent(vector<pair<int, int>> &edges, int v){
         int v = it.second;
 
         adj[u].push_back(v);
-        adj[v].push_back(u);
     }
 
     //create indegrees

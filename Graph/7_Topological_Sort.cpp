@@ -20,7 +20,6 @@ vector<int> topologicalSort(vector<pair<int, int>> &edges, int v){
         int v = it.second;
 
         adj[u].push_back(v);
-        adj[v].push_back(u);
     }
 
     unordered_map<int, bool> visited;
